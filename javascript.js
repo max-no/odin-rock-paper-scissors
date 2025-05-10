@@ -13,10 +13,10 @@ function getHumanChoice() {
 }
 
 function getComputerChoice() {
-  let randomNumber = Math.random();
-  if (randomNumber <= 0.33) {
+  let randomNumber = Math.floor((Math.random()*3)+1);
+  if (randomNumber <= 1) {
     return 'scissors';
-  } else if (0.33 < randomNumber <= 0.66) {
+  } else if (1 < randomNumber <= 2) {
     return 'rock';
   } else return 'paper';
 }
@@ -54,3 +54,5 @@ function playGame() {
     return console.log('You lose!');
   } else return console.log('You tie!');
 }
+
+playGame();
