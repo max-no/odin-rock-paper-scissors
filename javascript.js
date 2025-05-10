@@ -13,7 +13,7 @@ function getHumanChoice() {
 }
 
 function getComputerChoice() {
-  let randomNumber = Math.floor((Math.random()*3)+1);
+  let randomNumber = Math.floor(Math.random() * 3 + 1);
   if (randomNumber <= 1) {
     return 'scissors';
   } else if (1 < randomNumber <= 2) {
