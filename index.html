@@ -4,9 +4,57 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Console Rock Paper Scissors</title>
+    <script src="./javascript.js" defer></script>
+    <style>
+      #score {
+        white-space: pre-line;
+        font-weight: 600;
+      }
+
+      body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+          Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
+          sans-serif;
+      }
+
+      .score-buttons {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex: 1;
+        height: 400px;
+        gap: 12px;
+      }
+
+      .buttons {
+        display: flex;
+        gap: 16px;
+      }
+
+      button {
+        border: 2px dotted black;
+        background: white;
+        height: 50px;
+        width: 100px;
+        font-size: 20px;
+        font-weight: 1000;
+      }
+    </style>
   </head>
 
   <body>
-    <script src="./javascript.js"></script>
+    <div class="score-buttons">
+      <p>Choose a button to play rock paper scissors vs the computer!</p>
+      <div class="buttons">
+        <button id="rock">Rock</button>
+        <button id="paper">Paper</button>
+        <button id="scissors">Scissors</button>
+      </div>
+      <div id="score"></div>
+    </div>
   </body>
 </html>
