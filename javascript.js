@@ -77,9 +77,10 @@ function checkWinner() {
   if (humanScore === 5 || computerScore === 5) {
     let winner = determineWinner(humanScore, computerScore);
     score.textContent = `${winner} won! 
-    Final score was
     You: ${humanScore}
-    Computer: ${computerScore}`;
+    Computer: ${computerScore}
+
+    Select a hand to play again!`;
     humanScore = 0;
     computerScore = 0;
     tieCounter = 0;
